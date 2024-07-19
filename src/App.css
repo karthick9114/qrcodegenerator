@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: url("https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.image {
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input {
+  color: white;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.generateButton {
+  background-color: #3498db;
+}
+
+.generateButton:hover {
+  background-color: #113e5f;
+}
+
+.generateButton:active {
+  background-color: #011f34;
+}
+
+.generateButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.downloadButton {
+  background-color: hsl(120, 100%, 25%);
+  margin-left: 10px;
+}
+
+.downloadButton:hover {
+  background-color: hsl(120, 100%, 35%);
+}
+
+.downloadButton:active {
+  background-color: hsl(120, 100%, 45%);
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button.generateButton, button.downloadButton {
+    width: auto;
+  }
+}
